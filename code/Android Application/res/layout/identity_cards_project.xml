@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:id="@+id/scrollView1"
+	android:layout_width="fill_parent"
+	android:scrollbars="vertical">
+		
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="200px"
+    android:paddingRight="200px"
+    android:paddingTop="10px"
+	android:gravity="center">
+	
+	<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Identity Cards Menu"
+			android:textStyle="bold"
+			android:layout_marginTop="10dp"
+			android:textSize="20sp"
+			android:textColor="#d01e20"
+			android:gravity="center" />
+			
+	<Button android:id="@+id/voter_card" 
+		android:text="Voter Card"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:layout_marginTop="20dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/ration_card" 
+		android:text="Ration Card"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/plot_card" 
+		android:text="Plot Card"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/job_card" 
+		android:text="Job Card"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:enabled="true" />
+    <Button android:id="@+id/adahar_card" 
+		android:text="Aadhar Card"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:enabled="true" />		
+</LinearLayout>
+
+</ScrollView>

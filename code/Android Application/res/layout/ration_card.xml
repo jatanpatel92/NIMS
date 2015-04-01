@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:id="@+id/layout"
+	android:layout_height="fill_parent" android:layout_weight="1"
+	android:gravity="center_horizontal" 
+	>
+	<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Ration Card details:"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp"
+			android:textSize="20sp"
+			android:textColor="#d01e20" />
+			
+	<Button android:id="@+id/card_apply" android:text="Apply for card"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp"
+		android:textSize="18sp"
+		android:enabled="true" android:layout_marginTop="20dp"/>
+
+	<Button android:id="@+id/card_issued" android:text="Card Already Issued"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+		
+</LinearLayout>

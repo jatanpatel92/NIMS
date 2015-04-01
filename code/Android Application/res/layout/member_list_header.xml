@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:paddingTop="7dip"
+ android:paddingBottom="7dip"
+ android:orientation="horizontal"
+ android:gravity="center">
+<LinearLayout 
+    android:id="@+id/footer_layout" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView 
+        android:text="Member Name" 
+        android:id="@+id/member_name_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="14dip" 
+        android:textStyle="bold" 
+        android:layout_marginRight="5dip">
+    </TextView> 
+    <TextView 
+        android:text="Apply" 
+        android:id="@+id/apply_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="14dip" 
+        android:textStyle="bold" 
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="110px" 
+        >
+    </TextView>
+    <TextView 
+        android:text="Issue" 
+        android:id="@+id/issue_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:textSize="14dip" 
+        android:textStyle="bold" 
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/apply_msg"
+        android:layout_marginLeft="10px" >
+    </TextView>
+ </LinearLayout>
+  </LinearLayout> 

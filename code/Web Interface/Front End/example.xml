@@ -1,0 +1,105 @@
+
+<data> 
+    <event 
+        start="May 28 2006 09:00:00 GMT"
+        end="Jun 15 2006 09:00:00 GMT"
+        isDuration="true"
+        title="Project 1"
+        >
+		Project Name:
+		Project Description:
+		Project Category:
+		Project Duration:
+		Project Milestones:
+		Project Donors:
+		Villages:
+	    Talukas:
+		Districts:
+		Communities:
+		Total population covered directly:
+		Total population covered indirectly:
+		Project beneficiaries:
+		
+        </event> 
+        
+    <event 
+        start="Jun 16 2006 00:00:00 GMT"
+        end="Jun 26 2006 00:00:00 GMT"
+		isDuration="true"
+        title="Project 2"
+        > 
+        XYZ
+        </event> 
+        
+    <event 
+        start="Aug 02 2006 00:00:00 GMT"
+		end="Dec 31 2006 09:00:00 GMT"
+        isDuration="true"
+        title="Project 3"
+        > 
+        PQR
+        </event> 
+		 <event 
+        start="Nov 28 2005 09:00:00 GMT"
+        end="Dec 31 2005 09:00:00 GMT"
+        isDuration="true"
+        title="Project 4"
+        >
+		Project Name:
+		Project Description:
+		Project Category:
+		Project Duration:
+		Project Milestones:
+		Project Donors:
+		Villages:
+	    Talukas:
+		Districts:
+		Communities:
+		Total population covered directly:
+		Total population covered indirectly:
+		Project beneficiaries:
+		
+        </event> 
+		 <event 
+        start="Feb  2007 09:00:00 GMT"
+        end="May 15 2006 09:00:00 GMT"
+        isDuration="true"
+        title="Project 5"
+        >
+		Project Name:
+		Project Description:
+		Project Category:
+		Project Duration:
+		Project Milestones:
+		Project Donors:
+		Villages:
+	    Talukas:
+		Districts:
+		Communities:
+		Total population covered directly:
+		Total population covered indirectly:
+		Project beneficiaries:
+		
+        </event> 
+		 <event 
+        start="Jul 15 2008 09:00:00 GMT"
+        end="Jun 15 2009 09:00:00 GMT"
+        isDuration="true"
+        title="Project 6"
+        >
+		Project Name:
+		Project Description:
+		Project Category:
+		Project Duration:
+		Project Milestones:
+		Project Donors:
+		Villages:
+	    Talukas:
+		Districts:
+		Communities:
+		Total population covered directly:
+		Total population covered indirectly:
+		Project beneficiaries:
+		
+        </event> 
+</data>

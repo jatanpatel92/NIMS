@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This xml is displayed when application first opens.Takes Data for the
+		campaign
+	-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="wrap_content"
+	android:layout_centerInParent="true"
+	android:layout_height="wrap_content" android:padding="10px">
+
+	<TextView android:id="@+id/apply_msg" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Your Plot is" 
+		android:textSize="20sp"
+			android:textColor="#d01e20"/>
+
+
+	<RadioGroup android:id="@+id/category" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:textSize="18sp"
+		android:layout_below="@id/apply_msg">
+			<RadioButton android:id="@+id/self_owned" android:text="Self Owned"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_below="@id/apply_msg" />
+			<RadioButton android:id="@+id/govt_alloted" android:text="Government Alloted"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_below="@id/self_owned" />
+			<RadioButton android:id="@+id/govt_enroached"
+				android:text="Government Land Encroached" android:layout_width="wrap_content"
+				android:textSize="18sp"
+				android:layout_height="wrap_content" android:layout_below="@id/govt_alloted" />
+	</RadioGroup>
+
+	<Button android:id="@+id/submit" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/category"
+		android:layout_alignParentRight="true" android:layout_marginLeft="40px"
+		android:textSize="18sp"
+		android:text="Submit" />
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="50px"
+    android:paddingRight="50px"
+    android:paddingTop="30px" 
+	android:gravity="center" >
+	<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Information for this family"
+			android:textStyle="bold"
+			android:layout_marginTop="20dp"
+			android:textSize="20sp"
+			android:textColor="#d01e20"
+			android:gravity="center" />
+			
+	<Button android:id="@+id/view_family_info" android:text="Family Information"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" 
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="75dp"
+		android:layout_marginRight="75dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/member_list_info" android:text="Members Information"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="75dp"
+		android:layout_marginRight="75dp"
+		android:paddingRight="50dp"
+		android:textSize="18sp"
+		android:enabled="true"/>			
+	<Button android:id="@+id/identity_cards" android:text="Identity Cards"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="75dp"
+		android:layout_marginRight="75dp"
+		android:layout_centerInParent="true" android:paddingLeft="50dp"
+		android:textSize="18sp" android:paddingRight="50dp" android:enabled="true" />
+    <Button android:id="@+id/govt_schemes" android:text="Government Schemes"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="75dp"
+		android:layout_marginRight="75dp"
+		android:layout_centerInParent="true" android:paddingLeft="50dp"
+		android:textSize="18sp" android:paddingRight="50dp" android:enabled="true" />
+</LinearLayout>

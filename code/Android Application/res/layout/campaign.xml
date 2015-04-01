@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This xml is displayed when application first opens.Takes Data for the
+		campaign
+	-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns="1">
+
+<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter Campaign Information"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textSize="20sp"
+			android:textColor="#d01e20"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp" />
+
+<TableRow>
+		<TextView android:id="@+id/set_name"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Settlement name:" />
+	
+		<EditText android:id="@+id/set_name_entry"
+			android:layout_width="0dp"
+			android:imeOptions="actionDone"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:singleLine="true"
+        	android:textSize="18sp"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+			
+		<TableRow>
+		<TextView android:id="@+id/village_name"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Village name:" />
+	
+		<EditText android:id="@+id/village_name_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:imeOptions="actionDone"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:singleLine="true"
+        	android:textSize="18sp"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:paddingTop="30px">
+	 
+
+   <Button	android:id="@+id/submit" 
+   			android:layout_width="wrap_content"
+    		android:layout_weight="1"
+
+			android:layout_height="wrap_content"   
+			android:layout_alignParentRight="true"
+			android:text="Submit" />
+			
+</RelativeLayout>
+   
+</TableLayout>

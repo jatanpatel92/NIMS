@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:id="@+id/scrollView1"
+	android:layout_width="fill_parent">
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns="1"
+    	android:padding="10px"
+		android:scrollbarAlwaysDrawHorizontalTrack="true"
+		android:scrollbarAlwaysDrawVerticalTrack="true" 
+		android:scrollbars="vertical">
+		
+		<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter Member information"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textColor="#d01e20"
+			android:textSize="20sp"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp" />
+<TableRow>
+
+		<TextView android:id="@+id/member_name" 
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+			android:text="Member Name:" />
+		<EditText android:id="@+id/member_name_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"
+			 />
+</TableRow>
+<TableRow>
+
+		<TextView android:id="@+id/relation_with_head"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Relation with head:" />
+		<AutoCompleteTextView android:id="@+id/relation_with_head_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+            android:textColor="#000000"
+			 />
+</TableRow>
+
+<TableRow>
+		<TextView android:id="@+id/birth_year" android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Birth Year:" />
+		<EditText android:id="@+id/birth_year_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background" android:inputType="number"
+			 />
+</TableRow>
+<TableRow>
+		<TextView android:id="@+id/occupation" android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Occupation:" />
+		<AutoCompleteTextView android:id="@+id/occupation_entry"
+            android:textColor="#000000"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:imeOptions="actionDone"
+        	android:textSize="18sp" />
+</TableRow>
+<TableRow>
+		<TextView android:id="@+id/gender" android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Gender:" />
+        <RadioGroup android:id="@+id/gender_type" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal" >
+			<RadioButton android:id="@+id/male_type" android:text="Male"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				 />
+			<RadioButton android:id="@+id/female_type" android:text="Female"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				 />
+		</RadioGroup>  
+</TableRow>
+<TableRow>		
+		<Button android:id="@+id/submit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Submit" 
+			android:layout_column="2"
+			android:textSize="18sp"
+			/>
+         <!-- Irrelvant,But needed for list activity -->
+         <ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>    
+</TableRow>
+	</TableLayout>
+</ScrollView>

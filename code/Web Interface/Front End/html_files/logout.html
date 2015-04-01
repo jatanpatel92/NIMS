@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NIMS-Logout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    
+	  #map {
+	    width: 1250px; height: 600px; 
+	  }
+        
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+	  
+	  .n {
+	    text-align: center;
+	  }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body onload="init()">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="login.html">NGO INFORMATION MANAGEMENT SUITE</a>
+		  <!--Twitter Login Component-->
+		  
+		  <!--
+		  
+		  <ul class="nav secondary-nav session-dropdown" id="session">
+			<li class="dropdown js-session">
+            <a class="dropdown-toggle dropdown-signin" id="signin-link" href="#">
+		  
+		  <ul class="nav">
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				Account
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+            Action
+			</ul>
+			</li>
+		  </ul>
+		  
+		  <ul class="nav pull-right">
+            <li><a href="#">Link</a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+		  
+		  -->
+		  
+		  
+		  
+		  <ul class="nav js-global-actions">
+			<li class="home" data-global-action="t1home">
+            <a href="/">
+              <span><i class="nav-home-logged-out"></i></span>
+            </a>
+			</li>
+          </ul>
+          <ul class="nav pull-right">
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle dropwdown-signin" data-toggle="dropdown">
+              <b> Sign in </b>
+			  <b class="caret"> </b>
+            </a>
+			
+			<ul class="dropdown-menu dropdown-form" id="signin-dropdown">
+			
+			<!--
+            <a class="dropdown-signup" id="signup-link" href="https://twitter.com/signup?context=login">
+              <small> New to NIMS? </small><span class="emphasize"> Signup Now &raquo;</span>
+            </a>
+			-->
+            
+              <li>
+              <form action="html_form_action.asp" class="form-inline" method="get">
+			  <fieldset class="textbox">
+			  <label class="username js-username">
+			  <span>Username or Email</span>
+			  <input class="js-username-field email-input" type="text" value="" name="session[username_or_email]" autocomplete="on">
+			  </label>
+			  <label class="password js-password">
+			  <span>Password</span>
+			  <input class="js-password-field" type="password" value="" name="session[password]">
+			  </label>
+			  </fieldset>
+
+			  <fieldset class="subchck">
+			  <label class="remember">
+			  <input type="checkbox" value="1" name="remember_me">
+			  <span>Remember me</span>
+			  </label>
+			  <button type="submit" class="btn-warning">Sign in</button>
+			  </fieldset>
+
+			  <input type="hidden" name="scribe_log">
+			  <input type="hidden" name="redirect_after_login" value="">
+
+			  <div class="divider"> </div>
+			  <p>
+			  <a class="forgot" href="/account/resend_password">Forgot password?</a><br />
+			  </form>
+
+              </li>
+            </ul>
+            </li>
+        </ul>
+		</p>
+<!--/Twitter Login Component-->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+<div class="span10">
+		  <p id="n">
+          <b> You have successfully logged out. </b>
+		  </p> 
+          <div id="map">
+          </div>
+    <!--/span-->
+          
+        </div>
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Activity Updates</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="http://openlayers.org/dev/OpenLayers.js"></script>
+    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+<script>
+      function init() {
+        map = new OpenLayers.Map("map");
+        var mapnik = new OpenLayers.Layer.Google("Google Streets",{numZoomLevels: 20});
+        map.addLayer(mapnik);
+		
+		var markers = new OpenLayers.Layer.Markers( "Markers" );
+		map.addLayer(markers);
+		var lonLat = new OpenLayers.LonLat( 72.628112793 , 23.1886348724 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+          );
+		var lonLatt = new OpenLayers.LonLat( 72.62 , 23.19 )
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+          );
+		
+		
+		var size = new OpenLayers.Size(21,25);
+		var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
+		var icon = new OpenLayers.Icon('http://www.openlayers.org/dev/img/marker-blue.png', size, offset);
+		var icon1 = new OpenLayers.Icon('file:///C:/Users/abc/Desktop/symbols/beach.png', size, offset);
+		markers.addMarker(new OpenLayers.Marker(new OpenLayers.LonLat(72.63,23.19).transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+          ),icon));
+		markers.addMarker(new OpenLayers.Marker(lonLat,icon.clone()));
+		markers.addMarker(new OpenLayers.Marker(lonLatt,icon1));
+		
+        
+		map.setCenter(lonLat, 13 // Zoom level
+        );
+	
+
+      }
+    </script>
+
+  </body>
+</html>

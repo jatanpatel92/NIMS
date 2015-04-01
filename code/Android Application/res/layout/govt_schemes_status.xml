@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This xml is displayed when application first opens.Takes Data for the
+		campaign
+	-->
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:padding="10px">
+
+	 
+<!-- 	<TextView android:id="@+id/Username"
+			  android:layout_toLeftOf="@+id/Home"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:text="Username"
+			  android:paddingTop="25px"
+			  android:layout_gravity="center"/>
+			 
+    <Button   android:id="@+id/Home" 
+    		  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"  
+			  android:layout_toLeftOf="@+id/Logout"
+			  android:text="Home" />
+
+   <Button	android:id="@+id/Logout" 
+   			android:layout_width="wrap_content"
+    		android:layout_weight="1"
+			android:layout_height="wrap_content"   
+			android:layout_alignParentRight="true"
+			android:text="Logout" />  -->
+			
+	<TextView android:id="@+id/apply_msg" android:layout_width="wrap_content"
+		android:layout_below="@+id/Home"
+		android:textStyle="bold"
+		android:paddingBottom="20px"
+		android:textColor="#d01e20"
+		android:textSize="20sp"
+		android:layout_height="wrap_content" android:text="You have" />
+
+
+	<RadioGroup android:id="@+id/scheme_status" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_below="@id/apply_msg">
+			<RadioButton android:id="@+id/applied" android:text="Applied for the scheme"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_below="@id/apply_msg" />
+			<RadioButton android:id="@+id/issued" android:text="Scheme is Issued"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_below="@id/applied" />
+			<RadioButton android:id="@+id/not_applicable"
+				android:text="Scheme is not Applicable" android:layout_width="wrap_content"
+				android:textSize="18sp"
+				android:layout_height="wrap_content" android:layout_below="@id/issued" />
+	</RadioGroup>
+
+	<Button android:id="@+id/submit" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_below="@id/scheme_status"
+		android:layout_alignParentRight="true" android:layout_marginLeft="40px"
+		android:textSize="18sp"
+		android:text="Submit" />
+
+
+</RelativeLayout>

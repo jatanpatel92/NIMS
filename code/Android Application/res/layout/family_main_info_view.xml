@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:id="@+id/scrollView1"
+	android:layout_width="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:padding="10px">
+			
+ 		<TextView android:id="@+id/family_head_name"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Home"
+			
+			android:text="Family Head Name:"
+			android:layout_marginTop="10dp" />
+		<TextView android:id="@+id/family_head_name_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@+id/Home"
+			android:layout_alignParentRight="true" android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp" />
+			
+		<TextView android:id="@+id/no_of_members"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/family_head_name" android:text="No of Members:"
+			android:layout_marginTop="10dp" />
+		<TextView android:id="@+id/no_of_members_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:inputType="number" 
+			android:layout_below="@id/family_head_name_entry"
+			android:layout_alignParentRight="true" android:maxLength="2"
+			android:layout_marginLeft="200dp" 
+			android:layout_marginTop="10dp"/>
+			
+	    <TextView android:id="@+id/family_community_name"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/no_of_members"
+			android:text="Community Name:"
+			android:layout_marginTop="10dp" />
+		<TextView android:id="@+id/family_community_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@+id/no_of_members_entry"
+			android:layout_alignParentRight="true" android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp" />
+
+		<TextView android:id="@+id/fam_no_of_children"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/family_community_name" android:text="No of Children:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_no_of_children_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/family_community_entry"
+			android:layout_alignParentRight="true" android:maxLength="2"
+			android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp" />
+
+
+		<TextView android:id="@+id/fam_last_migrated_from"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_no_of_children" android:text="Last migrated from:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_last_migrated_from_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_no_of_children_entry"
+			android:layout_alignParentRight="true" 
+			android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp" />
+
+
+		<TextView android:id="@+id/fam_traditional_occupation"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_last_migrated_from" android:text="Traditional Occupation:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_traditional_occupation_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_last_migrated_from_entry"
+			android:layout_alignParentRight="true" 
+			android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp"  />
+
+		<TextView android:id="@+id/fam_daily_income"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_traditional_occupation"
+			android:text="Daily Income:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_daily_income_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:inputType="number" 
+			android:layout_below="@id/fam_traditional_occupation_entry"
+			android:layout_alignParentRight="true" android:maxLength="2"
+			android:layout_marginLeft="200dp" 
+			android:layout_marginTop="10dp"/>
+
+		<TextView android:id="@+id/fam_no_of_children_school"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@+id/fam_daily_income" android:text="No.of children in school:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_no_of_children_school_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@+id/fam_daily_income_entry"
+			android:layout_alignParentRight="true" android:maxLength="2"
+			android:layout_marginLeft="200dp" 
+			android:layout_marginTop="10dp"/>
+			
+		<TextView android:id="@+id/fam_no_handicapped"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_no_of_children_school" android:text="No of Handicapped:" 
+			android:layout_marginTop="10dp"/>
+		<TextView android:id="@+id/fam_no_handicapped_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_no_of_children_school_entry"
+			android:layout_alignParentRight="true" android:maxLength="2"
+			android:layout_marginLeft="200dp"
+			android:layout_marginTop="10dp" />
+			
+		<TextView android:id="@+id/electricity_access"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    android:layout_below="@id/fam_no_handicapped"
+		    android:text="Electricity Access:"
+			android:layout_marginTop="10dp"/>
+	    <TextView android:id="@+id/electricity_access_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/fam_no_handicapped_entry"
+			android:layout_alignParentRight="true" 
+			android:layout_marginLeft="200dp" 
+			android:layout_marginTop="10dp"/>
+			
+		<TextView android:id="@+id/water_connection"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    android:layout_below="@id/electricity_access"
+		    android:text="Water Connection:"
+			android:layout_marginTop="10dp"/>
+	    <TextView android:id="@+id/water_connection_entry"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_below="@id/electricity_access_entry"
+			android:layout_alignParentRight="true" 
+			android:layout_marginLeft="200dp" 
+			android:layout_marginTop="10dp"/>
+		
+	<Button android:id="@+id/edit" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/water_connection_entry"
+		android:layout_alignParentRight="true" 
+		android:layout_marginTop="20dp"
+		android:text="Edit" />
+
+</RelativeLayout>
+</ScrollView>

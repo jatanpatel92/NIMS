@@ -1,0 +1,62 @@
+<html>
+  <head>
+        <script src="http://simile.mit.edu/timeline/api/timeline-api.js" type="text/javascript"></script>
+		
+  </head>
+  <body onload="onLoad();" onresize="onResize();">
+  <div id="time range">
+	<form name="input" action="file:///C:/Users/Pony/Dropbox/SEN/Final%20Submission/code/Web%20Interface/Front%20End/timeline_projects.html" method="get">
+	Enter Time range: <input type="text" name="start"> to <input type="text" name="end">
+	<input type="submit" value="Submit">
+	</form> 
+  </div>
+  <div id="my-timeline" style="height: 600px; border: 2px solid #aaa">
+  <script type="text/javascript">
+  
+  
+  var tl;
+  function onLoad() {
+  var eventSource = new Timeline.DefaultEventSource();
+  var theme = Timeline.ClassicTheme.create(); 
+     theme.ether.backgroundColors[0] = "#FFFFFF"; 
+     theme.ether.backgroundColors[1] = "#C11B17"; 
+     theme.ether.backgroundColors[2] = "#FFFFFF"; 
+	// theme.timeline_start = 
+	// theme.timeline_end = new Date(Date.UTC(document.getElementById("end").value));
+  var bandInfos = [
+    Timeline.createBandInfo({
+        eventSource:    eventSource,
+        date:           "Jan 1 2010",//new Date(document.getElementById("time range").value)).toUTCString(),
+        width:          "70%", 
+        intervalUnit:   Timeline.DateTime.MONTH, 
+		theme: theme,
+        intervalPixels: 100
+    }),
+    Timeline.createBandInfo({
+        eventSource:    eventSource,
+        date:           "Jan 1 2012",
+        width:          "30%", 
+        intervalUnit:   Timeline.DateTime.YEAR, 
+		theme: theme,
+        intervalPixels: 200
+    })
+  ];
+  bandInfos[1].syncWith = 0;
+  bandInfos[1].highlight = true;
+  tl = Timeline.create(document.getElementById("my-timeline"), bandInfos);
+  Timeline.loadXML("event.xml",function(xml,url) { eventSource.loadXML(xml,url) } );
+}
+
+var resizeTimerID = null;
+function onResize() {
+    if (resizeTimerID == null) {
+        resizeTimerID = window.setTimeout(function() {
+            resizeTimerID = null;
+            tl.layout();
+        }, 500);
+    }
+}
+</script>
+</div>
+</body>
+</html>

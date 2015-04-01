@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="sen.nims"
+      android:versionCode="1"
+      android:versionName="1.0">
+     <uses-permission android:name="android.permission.INTERNET" /> 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:icon="@drawable/icon" android:label="NIMS" android:theme="@style/CustomTheme">
+        <activity android:name=".nims"
+                  android:label="NIMS" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".CampaignInfo" android:noHistory="true"/>
+        <activity android:name=".familiesListItemDistribute" android:noHistory="true"/>
+        <activity android:name=".ItemDistributionName" android:noHistory="true"/>
+        <activity android:name=".SocialMap" android:noHistory="true"/>
+        <activity android:name=".SelectProject" android:noHistory="true"/>
+        <activity android:name=".CheckNewFamily" android:noHistory="true"/>
+        <activity android:name=".InsertUpdateFamilyInfo"  android:noHistory="true"/>
+        <activity android:name=".FamilyMenu" android:noHistory="true"  android:configChanges="orientation"/>
+        <activity android:name=".IdentityCardsMenu" android:noHistory="true"/>
+        <activity android:name=".ViewFamilyInfo" android:noHistory="true"/>
+        <activity android:name=".ViewMemberInfo" android:noHistory="true"/>
+        <activity android:name=".memberListStatus" android:noHistory="true"/>
+        <activity android:name=".memberListInfo" android:noHistory="true"/>
+        <activity android:name=".GovtSchemesMenu" android:noHistory="true"/>
+        <activity android:name=".familiesList" android:noHistory="true"/>
+        <activity android:name=".RationCardMenu" android:noHistory="true"/>
+        <activity android:name=".RationCardCategory" android:noHistory="true"/>
+        <activity android:name=".PlotCardTypeMenu" android:noHistory="true"/>
+	    <activity android:name=".InsertUpdateMemberInfo" android:noHistory="true"/>
+	    <activity android:name=".GovtSchemesStatus" android:noHistory="true"/>
+    </application>
+	
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest> 

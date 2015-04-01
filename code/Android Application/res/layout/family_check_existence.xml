@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:layout_weight="1"
+	android:paddingLeft="50px"
+	android:paddingRight="50px"
+	android:gravity="center">
+	<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Check Family"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textColor="#d01e20"
+			android:layout_marginTop="20dp"
+			android:textSize="20sp"
+			android:layout_marginBottom="20dp" />
+	<Button android:id="@+id/new_family_info" android:text="New Family Information"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" 
+		android:gravity="center" 
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="20dp"
+
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/exisiting_family_info" android:text="Existing Family Information"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:textSize="18sp" 
+		android:enabled="true" />
+
+</LinearLayout>
+
+

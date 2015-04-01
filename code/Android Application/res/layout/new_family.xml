@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:id="@+id/scrollView1"
+	android:layout_width="fill_parent"
+	android:scrollbars="vertical">
+ 
+ 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns="1"
+    	android:padding="10px"
+		android:scrollbarAlwaysDrawHorizontalTrack="true"
+		android:scrollbarAlwaysDrawVerticalTrack="true" 
+		android:scrollbars="vertical">
+
+<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter Family information"
+			android:textStyle="bold"
+			android:gravity="center"
+			android:textColor="#d01e20"
+			android:textSize="20sp"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp" />
+
+<TableRow>
+		<TextView android:id="@+id/family_head_name"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Family head name:" />
+	
+		<EditText android:id="@+id/family_head_name_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+			
+		<TableRow>
+		<TextView android:id="@+id/no_of_members"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="No. of members:" />
+	
+		<EditText android:id="@+id/no_of_members_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:inputType="number"
+        	android:maxLength="2"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+			
+       <TableRow>
+		<TextView android:id="@+id/family_community_name"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Community name:" />
+	
+		<AutoCompleteTextView android:id="@+id/family_community_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+        	android:textColor="#000000"
+			/>
+</TableRow>
+<TableRow>
+		<TextView android:id="@+id/fam_no_of_children"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="No. of children:" />
+	
+		<EditText android:id="@+id/fam_no_of_children_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:inputType="number"
+        	android:maxLength="2"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+
+		<TableRow>
+		<TextView android:id="@+id/fam_last_migrated_from"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Last migrated from:" />
+	
+		<EditText android:id="@+id/fam_last_migrated_from_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+
+
+		<TableRow>
+		<TextView android:id="@+id/fam_traditional_occupation"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Traditional Occupation:" />
+	
+		<EditText android:id="@+id/fam_traditional_occupation_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+
+		<TableRow>
+		<TextView android:id="@+id/fam_daily_income"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Daily income(INR):" />
+	
+		<EditText android:id="@+id/fam_daily_income_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:maxLength="3"
+        	android:inputType="number"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+
+		<TableRow>
+		<TextView android:id="@+id/fam_no_of_children_school"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="No. of children in school:" />
+	
+		<EditText android:id="@+id/fam_no_of_children_school_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:maxLength="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:inputType="number"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow>
+
+<!-- <TableRow>
+		<TextView android:id="@+id/fam_settlement_date"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:text="Settlement date:" />
+	
+		<Button android:id="@+id/fam_settlement_date_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:inputType="date"
+			android:hint="Select Date"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"
+			/>
+</TableRow> -->
+					
+		<TableRow>
+		<TextView android:id="@+id/fam_no_handicapped"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="No. of handicapped members:" />
+	
+		<EditText android:id="@+id/fam_no_handicapped_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:maxLength="2"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:inputType="number"
+        	android:imeOptions="actionDone"
+			android:background="@android:drawable/editbox_background"/>
+</TableRow> 
+			
+		<TableRow>
+		<TextView android:id="@+id/electricity_access"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:layout_gravity="center"
+        	android:textSize="18sp"
+        	android:text="Electricity Access:" />
+	
+		<CheckBox android:id="@+id/electricity_access_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"/>
+</TableRow>
+			
+		<TableRow>
+		<TextView android:id="@+id/water_connection"
+			android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_column="1"
+        	android:textSize="18sp"
+        	android:layout_gravity="center"
+        	android:text="Water Connection:" />
+	
+		<CheckBox android:id="@+id/water_connection_entry"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:layout_column="2"
+        	android:layout_gravity="center"/>
+</TableRow>
+
+<TableRow>
+		<Button android:id="@+id/submit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_alignParentRight="true" 
+			android:text="Submit" 
+			android:layout_column="2"
+			/>
+
+</TableRow>
+	</TableLayout>
+ </ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingTop="30px" 
+	android:gravity="center" >
+	
+	<TextView android:id="@+id/title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Available Government Schemes"
+			android:textStyle="bold"
+			android:layout_marginTop="20dp"
+			android:textColor="#d01e20"
+			android:textSize="20sp"
+			android:gravity="center" />
+			
+	<Button android:id="@+id/hosing_support" android:text="Housing Support Scheme"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp" android:layout_marginTop="20dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/janni_support" android:text="Janni Support Scheme"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+	<Button android:id="@+id/virudh_pension" android:text="Old Age Pension Scheme"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+    <Button android:id="@+id/window_pension" android:text="Widow Pension Scheme"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_centerInParent="true" android:layout_marginLeft="150dp"
+		android:layout_marginRight="150dp"
+		android:textSize="18sp"
+		android:enabled="true" />
+</LinearLayout>

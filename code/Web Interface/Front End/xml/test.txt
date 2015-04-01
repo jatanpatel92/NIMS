@@ -1,0 +1,15 @@
+23.191
+72.6305
+atm
+axis-bank, NIFT
+gandhinagar
+23.2165
+72.6423
+bus_stop
+S.T. bus stand
+gandhinagar
+23.2181
+72.6409
+hospital
+civil hospital
+gandhinagar

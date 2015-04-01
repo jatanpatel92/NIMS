@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<TextView android:id="@+id/label" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@+id/label"
+		android:textSize="30px">
+	</TextView>
+
+	<RadioGroup android:id="@+id/types"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_alignParentRight="true"
+		android:layout_marginLeft="10px" android:layout_marginRight="10px">
+		<RadioButton android:id="@+id/apply"
+			android:layout_alignParentRight="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="10px" />
+		<RadioButton android:id="@+id/issued"
+			android:layout_alignParentRight="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginRight="10px" />
+	</RadioGroup>
+</RelativeLayout>

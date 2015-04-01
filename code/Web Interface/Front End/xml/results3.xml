@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JSChart>
+<dataset type="pie">
+<data unit="traditional" value="10" />
+<data unit="current" value="28" />
+</dataset>
+<optionset>
+<option set="setTitle" value="'Hello'"/>
+</optionset>
+</JSChart>
